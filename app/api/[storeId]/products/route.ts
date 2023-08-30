@@ -121,7 +121,7 @@ export async function GET(
 
     return NextResponse.json(products);
   } catch (error) {
-    console.log("[PRODUCT_POST]", error);
+    console.log("[PRODUCT_GET]", error);
     return new NextResponse("Interal error", { status: 500 });
   }
 }
